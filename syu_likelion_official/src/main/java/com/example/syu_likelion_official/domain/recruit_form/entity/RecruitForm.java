@@ -21,7 +21,7 @@ public class RecruitForm {
     private Boolean gender;
     private String q1Motivation;
     private String q2Experience;
-    private String q3ProjectTODo;
+    private String q3ProjectToDo;
     private String q4Track1;
     private String q5Track2;
     private Boolean ifHasLaptop;
@@ -29,3 +29,4 @@ public class RecruitForm {
     private String portfolio;
     private Integer password;
 }
+
