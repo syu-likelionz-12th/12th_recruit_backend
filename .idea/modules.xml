@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/12th_recruit_backend.iml" filepath="$PROJECT_DIR$/.idea/12th_recruit_backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.syu_likelion_official.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.syu_likelion_official.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/syu_likelion_official.main.iml" filepath="$PROJECT_DIR$/.idea/modules/syu_likelion_official.main.iml" />
     </modules>
   </component>

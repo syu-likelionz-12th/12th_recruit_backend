@@ -1,12 +1,15 @@
 package com.example.syu_likelion_official.domain.recruit_form.service;
 
 import com.example.syu_likelion_official.domain.recruit_form.dto.CreateRecruitForm;
+import com.example.syu_likelion_official.domain.recruit_form.dto.PasswordDto;
 import com.example.syu_likelion_official.domain.recruit_form.entity.RecruitForm;
 import com.example.syu_likelion_official.domain.recruit_form.repository.RecruitFormRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @Transactional
@@ -30,5 +33,17 @@ public class RecruitFormService {
                 .password(createRecruitForm.getPassword())
                 .build();
         recruitFormRepository.save(recruitForm);
+
+    }
+
+    public RecruitForm viewOneByPassword(PasswordDto passwordDto) {
+        List<RecruitForm> receivedList =  recruitFormRepository.findByPassword(passwordDto.getPassword());
+        RecruitForm recruitForm = null;
+        for (RecruitForm form : receivedList) {
+            if (form.getStudentNum().equals(passwordDto.getStudentNum())) {
+                recruitForm  = form;
+            }
+        }
+        return recruitForm;
     }
 }
