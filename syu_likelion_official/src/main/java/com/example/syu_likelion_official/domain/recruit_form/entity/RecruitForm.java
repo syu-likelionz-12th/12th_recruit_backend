@@ -27,6 +27,6 @@ public class RecruitForm {
     private Boolean ifHasLaptop;
     private Boolean ifSessionAvaliable;
     private String portfolio;
-    private Integer password;
+    private String password;
 }
 
